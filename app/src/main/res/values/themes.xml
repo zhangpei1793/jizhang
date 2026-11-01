@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 使用系统 Material 主题，界面完全由 Compose 绘制，避免额外 AppCompat 依赖 -->
+    <style name="Theme.Ledger" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:statusBarColor">@color/app_background</item>
+        <item name="android:navigationBarColor">@color/app_nav_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

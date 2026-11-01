@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">个人流水账</string>
+
+    <!-- 通用 -->
+    <string name="action_retry">重试</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_save">保存</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_delete">删除</string>
+    <string name="action_edit">修改</string>
+    <string name="action_add">添加</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_close">关闭</string>
+    <string name="action_back">返回</string>
+    <string name="loading">加载中…</string>
+    <string name="error_generic">操作失败，请稍后重试</string>
+    <string name="network_unavailable">网络不可用，无法同步，请联网后重试</string>
+    <string name="saved_success">保存成功</string>
+    <string name="deleted_success">删除成功</string>
+    <string name="money_format">¥%1$s</string>
+    <string name="money_income">+¥%1$s</string>
+    <string name="money_expense">-¥%1$s</string>
+    <string name="month_title">%1$d年%2$d月</string>
+
+    <!-- 配置缺失 -->
+    <string name="config_missing_title">未配置数据库连接</string>
+    <string name="config_missing_message">请打开项目根目录的 local.properties，填写 SUPABASE_DB_HOST、SUPABASE_DB_PORT、SUPABASE_DB_NAME、SUPABASE_DB_USER、SUPABASE_DB_PASSWORD（使用 Session Pooler 的 5432 端口），并在 supabase/direct-access.sql 中初始化数据库后重新构建。</string>
+
+    <!-- 登录注册 -->
+    <string name="auth_welcome">轻松记录每一笔</string>
+    <string name="auth_login">登录</string>
+    <string name="auth_register">注册</string>
+    <string name="auth_email">邮箱</string>
+    <string name="auth_password">密码</string>
+    <string name="auth_confirm_password">确认密码</string>
+    <string name="auth_login_title">登录账号</string>
+    <string name="auth_register_title">创建账号</string>
+    <string name="auth_switch_register">还没有账号？立即注册</string>
+    <string name="auth_switch_login">已有账号？去登录</string>
+    <string name="auth_email_invalid">请输入正确的邮箱地址</string>
+    <string name="auth_password_short">密码至少 6 位</string>
+    <string name="auth_password_mismatch">两次输入的密码不一致</string>
+    <string name="auth_register_verify">注册成功，请前往邮箱完成验证后再登录</string>
+    <string name="auth_register_success">注册成功</string>
+    <string name="auth_logged_out">已退出登录</string>
+
+    <!-- 首页 -->
+    <string name="home_title">流水</string>
+    <string name="home_add_record">记一笔</string>
+    <string name="home_budget_title">本月预算</string>
+    <string name="home_budget_empty">尚未设置本月预算</string>
+    <string name="home_set_budget">设置预算</string>
+    <string name="home_edit_budget">修改预算</string>
+    <string name="home_budget_spent">已支出 ¥%1$s</string>
+    <string name="home_budget_total">预算 ¥%1$s</string>
+    <string name="home_budget_remaining">剩余 ¥%1$s</string>
+    <string name="home_budget_over">超支 ¥%1$s</string>
+    <string name="home_records_title">最近流水</string>
+    <string name="home_empty">还没有账单，点击右下角记第一笔</string>
+    <string name="home_load_more">加载更多</string>
+    <string name="home_no_more">没有更多了</string>
+    <string name="budget_status_normal">预算正常</string>
+    <string name="budget_status_warning">即将超支</string>
+    <string name="budget_status_exceeded">已超支</string>
+    <string name="budget_dialog_title">设置 %1$d年%2$d月 预算</string>
+    <string name="budget_amount_label">预算金额</string>
+    <string name="budget_amount_invalid">请输入大于 0 的预算金额</string>
+
+    <!-- 记账 -->
+    <string name="record_expense">支出</string>
+    <string name="record_income">收入</string>
+    <string name="record_amount_hint">0.00</string>
+    <string name="record_amount_label">金额</string>
+    <string name="record_category">分类</string>
+    <string name="record_date">日期</string>
+    <string name="record_remark">备注（可选）</string>
+    <string name="record_save">保存账单</string>
+    <string name="record_delete">删除账单</string>
+    <string name="record_delete_title">删除账单</string>
+    <string name="record_delete_message">确定要删除这笔账单吗？删除后不可恢复。</string>
+    <string name="record_amount_required">请输入金额</string>
+    <string name="record_amount_invalid">金额必须大于 0，且最多两位小数</string>
+    <string name="record_amount_too_large">金额不能超过 9,999,999,999.99</string>
+    <string name="record_category_required">请选择分类</string>
+    <string name="record_categories_empty">暂无可用分类，请先到分类管理中添加</string>
+    <string name="record_uncategorized">未分类</string>
+    <string name="record_saved">账单已保存</string>
+    <string name="record_deleted">账单已删除</string>
+    <string name="record_title_new">记一笔</string>
+    <string name="record_title_edit">编辑账单</string>
+    <string name="record_select_date">选择日期</string>
+    <string name="record_load_failed">账单加载失败</string>
+
+    <!-- 日历 -->
+    <string name="calendar_title">日历</string>
+    <string name="calendar_prev_month">上个月</string>
+    <string name="calendar_next_month">下个月</string>
+    <string name="calendar_today">今天</string>
+    <string name="calendar_day_detail">当日明细</string>
+    <string name="calendar_day_income">收入 ¥%1$s</string>
+    <string name="calendar_day_expense">支出 ¥%1$s</string>
+    <string name="calendar_day_empty">当日没有账单</string>
+    <string name="calendar_month_summary">本月收入 ¥%1$s · 支出 ¥%2$s</string>
+    <string name="weekday_mon">一</string>
+    <string name="weekday_tue">二</string>
+    <string name="weekday_wed">三</string>
+    <string name="weekday_thu">四</string>
+    <string name="weekday_fri">五</string>
+    <string name="weekday_sat">六</string>
+    <string name="weekday_sun">日</string>
+
+    <!-- 统计 -->
+    <string name="stats_title">统计</string>
+    <string name="stats_income">总收入</string>
+    <string name="stats_expense">总支出</string>
+    <string name="stats_balance">净结余</string>
+    <string name="stats_expense_breakdown">支出构成</string>
+    <string name="stats_income_breakdown">收入构成</string>
+    <string name="stats_daily_trend">每日趋势</string>
+    <string name="stats_no_data">本月暂无数据</string>
+    <string name="stats_category_detail">%1$s · 明细</string>
+    <string name="stats_legend_empty">暂无数据</string>
+    <string name="stats_percent">%1$s%%</string>
+    <string name="stats_trend_legend">收入 / 支出</string>
+
+    <!-- 分类 -->
+    <string name="category_title">分类管理</string>
+    <string name="category_expense">支出分类</string>
+    <string name="category_income">收入分类</string>
+    <string name="category_add">新增分类</string>
+    <string name="category_edit">编辑分类</string>
+    <string name="category_name">分类名称</string>
+    <string name="category_icon">选择图标</string>
+    <string name="category_type">适用类型</string>
+    <string name="category_type_expense">仅支出</string>
+    <string name="category_type_income">仅收入</string>
+    <string name="category_type_both">通用</string>
+    <string name="category_builtin">内置</string>
+    <string name="category_delete_title">删除分类</string>
+    <string name="category_delete_message">确定删除「%1$s」吗？若该分类下已有账单，将无法删除。</string>
+    <string name="category_name_required">请输入分类名称</string>
+    <string name="category_name_too_long">分类名称不能超过 20 个字符</string>
+    <string name="category_saved">分类已保存</string>
+    <string name="category_deleted">分类已删除</string>
+    <string name="category_delete_in_use">该分类下还有账单，无法删除</string>
+    <string name="category_empty">暂无分类</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">我的</string>
+    <string name="settings_account">账号</string>
+    <string name="settings_category">分类管理</string>
+    <string name="settings_sign_out">退出登录</string>
+    <string name="settings_sign_out_title">退出登录</string>
+    <string name="settings_sign_out_message">退出后需要重新登录，云端数据不会删除。</string>
+    <string name="settings_version">关于</string>
+    <string name="settings_app_version">版本 %1$s</string>
+</resources>
